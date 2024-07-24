@@ -13,6 +13,12 @@ export default function General() {
     setIsSubmitted(true);
   }
 
+  function edit(e) {
+    e.preventDefault();
+    console.log('edit!');
+    setIsSubmitted(false);
+  }
+
   if (isSubmitted) {
     return (
       <>
@@ -20,6 +26,9 @@ export default function General() {
         <div>{lastName}</div>
         <div>{email}</div>
         <div>{phoneNumber}</div>
+        <form onSubmit={edit}>
+          <button type="submit">Edit</button>
+        </form>
       </>
     );
   }
