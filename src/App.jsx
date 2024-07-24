@@ -16,11 +16,11 @@ function App() {
         </div>
         <div>
           <label htmlFor="email">Email </label>
-          <input type="email" id="email" />
+          <input type="text" id="email" />
         </div>
         <div>
           <label htmlFor="phone-number">Phone number </label>
-          <input type="tel" id="phone-number" />
+          <input type="text" id="phone-number" />
         </div>
       </div>
     </>
