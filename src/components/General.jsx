@@ -5,10 +5,12 @@ export default function General() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submit(e) {
     e.preventDefault();
     console.log('submit!');
+    setIsSubmitted(true);
   }
 
   return (
