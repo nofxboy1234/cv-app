@@ -13,6 +13,17 @@ export default function General() {
     setIsSubmitted(true);
   }
 
+  if (isSubmitted) {
+    return (
+      <>
+        <div>{firstName}</div>
+        <div>{lastName}</div>
+        <div>{email}</div>
+        <div>{phoneNumber}</div>
+      </>
+    );
+  }
+
   return (
     <>
       <div>
