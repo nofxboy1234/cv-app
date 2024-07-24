@@ -9,13 +9,11 @@ export default function General() {
 
   function submit(e) {
     e.preventDefault();
-    console.log('submit!');
     setIsSubmitted(true);
   }
 
   function edit(e) {
     e.preventDefault();
-    console.log('edit!');
     setIsSubmitted(false);
   }
 
