@@ -1,13 +1,13 @@
 import './App.css';
 import General from './components/General';
-import Education from './components/Education';
+import EducationIndex from './components/education/Index';
 
 function App() {
   return (
     <>
       <h1>CV App</h1>
       <General />
-      <Education />
+      <EducationIndex />
     </>
   );
 }
