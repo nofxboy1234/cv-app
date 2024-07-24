@@ -17,9 +17,12 @@ export default function General() {
     setIsSubmitted(false);
   }
 
+  const heading = <h2>General</h2>;
+
   if (isSubmitted) {
     return (
       <>
+        {heading}
         <div>{firstName}</div>
         <div>{lastName}</div>
         <div>{email}</div>
@@ -33,50 +36,48 @@ export default function General() {
 
   return (
     <>
-      <div>
-        <h2>General</h2>
-        <form onSubmit={submit}>
-          <div>
-            <label htmlFor="first-name">First Name </label>
-            <input
-              type="text"
-              id="first-name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="last-name">Last Name </label>
-            <input
-              type="text"
-              id="last-name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email </label>
-            <input
-              type="text"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="phone-number">Phone number </label>
-            <input
-              type="text"
-              id="phone-number"
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-            />
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+      {heading}
+      <form onSubmit={submit}>
+        <div>
+          <label htmlFor="first-name">First Name </label>
+          <input
+            type="text"
+            id="first-name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="last-name">Last Name </label>
+          <input
+            type="text"
+            id="last-name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email </label>
+          <input
+            type="text"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="phone-number">Phone number </label>
+          <input
+            type="text"
+            id="phone-number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+          />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </>
   );
 }
