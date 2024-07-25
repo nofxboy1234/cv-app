@@ -1,4 +1,5 @@
-form > div {
+form > div,
+.show-data > div {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -7,4 +8,16 @@ form > div {
 .submit-container {
   display: flex;
   justify-content: center;
+}
+
+.show-data-value {
+  width: 185px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.show-data-date {
+  width: 180px;
+  display: flex;
+  justify-content: flex-start;
 }

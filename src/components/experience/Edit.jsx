@@ -55,6 +55,7 @@ export default function ExperienceEdit({
           <label htmlFor="date-start">Date Start </label>
           <input
             required
+            className="show-data-date"
             type="date"
             id="date-start"
             value={experience.dateStart}
@@ -70,6 +71,7 @@ export default function ExperienceEdit({
           <label htmlFor="date-end">Date End </label>
           <input
             required
+            className="show-data-date"
             type="date"
             id="date-end"
             value={experience.dateEnd}

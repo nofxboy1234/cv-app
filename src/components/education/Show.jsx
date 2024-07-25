@@ -1,14 +1,25 @@
 export default function EducationShow({ education, toggleEdit }) {
   return (
     <>
-      <div>{education.schoolName}</div>
-      <div>{education.course}</div>
-      <div>{education.date}</div>
-      <form onSubmit={toggleEdit}>
-        <div className="submit-container">
-          <button type="submit">Edit</button>
+      <div className="show-data">
+        <div>
+          <div>School Name </div>
+          <div className="show-data-value">{education.schoolName}</div>
         </div>
-      </form>
+        <div>
+          <div>Course </div>
+          <div className="show-data-value">{education.course}</div>
+        </div>
+        <div>
+          <div>Date</div>
+          <div className="show-data-value">{education.date}</div>
+        </div>
+        <form onSubmit={toggleEdit}>
+          <div className="submit-container">
+            <button type="submit">Edit</button>
+          </div>
+        </form>
+      </div>
     </>
   );
 }

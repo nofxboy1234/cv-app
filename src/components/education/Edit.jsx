@@ -40,6 +40,7 @@ export default function EducationEdit({
           <label htmlFor="date">Date </label>
           <input
             required
+            className="show-data-date"
             type="date"
             id="date"
             value={education.date}
