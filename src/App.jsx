@@ -1,6 +1,7 @@
 import './App.css';
 import General from './components/general/General';
 import EducationIndex from './components/education/Index';
+import ExperienceIndex from './components/experience/Index';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>CV App</h1>
       <General />
       <EducationIndex />
+      <ExperienceIndex />
     </>
   );
 }
