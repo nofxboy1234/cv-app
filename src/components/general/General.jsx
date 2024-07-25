@@ -24,16 +24,18 @@ export default function General() {
 
   return (
     <>
-      <h2>General</h2>
-      {isSubmitted ? (
-        <GeneralShow general={general} toggleEdit={toggleEdit} />
-      ) : (
-        <GeneralEdit
-          general={general}
-          handleChangeGeneral={handleChangeGeneral}
-          toggleEdit={toggleEdit}
-        />
-      )}
+      <div className="cv-section">
+        <h2>General</h2>
+        {isSubmitted ? (
+          <GeneralShow general={general} toggleEdit={toggleEdit} />
+        ) : (
+          <GeneralEdit
+            general={general}
+            handleChangeGeneral={handleChangeGeneral}
+            toggleEdit={toggleEdit}
+          />
+        )}
+      </div>
     </>
   );
 }
