@@ -19,12 +19,20 @@ export default function EducationShow({ experience, toggleEdit }) {
 
         <div>
           <div>Date Start </div>
-          <div className="show-data-value">{experience.dateStart}</div>
+          <div className="show-data-value">{`${
+            experience.dateStart.split('-')[2]
+          }/${experience.dateStart.split('-')[1]}/${
+            experience.dateStart.split('-')[0]
+          }`}</div>
         </div>
 
         <div>
           <div>Date End</div>
-          <div className="show-data-value">{experience.dateEnd}</div>
+          <div className="show-data-value">{`${
+            experience.dateEnd.split('-')[2]
+          }/${experience.dateEnd.split('-')[1]}/${
+            experience.dateEnd.split('-')[0]
+          }`}</div>
         </div>
         <form onSubmit={toggleEdit}>
           <div className="submit-container">

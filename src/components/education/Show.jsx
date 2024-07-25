@@ -12,7 +12,9 @@ export default function EducationShow({ education, toggleEdit }) {
         </div>
         <div>
           <div>Date</div>
-          <div className="show-data-value">{education.date}</div>
+          <div className="show-data-value">{`${education.date.split('-')[2]}/${
+            education.date.split('-')[1]
+          }/${education.date.split('-')[0]}`}</div>
         </div>
         <form onSubmit={toggleEdit}>
           <div className="submit-container">
