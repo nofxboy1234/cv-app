@@ -10,6 +10,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="company">Company </label>
             <input
+              required
               type="text"
               id="company"
               value={experience.company}
@@ -24,6 +25,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="position-title">Position Title </label>
             <input
+              required
               type="text"
               id="position-title"
               value={experience.positionTitle}
@@ -38,6 +40,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="responsibilities">Responsibilities </label>
             <input
+              required
               type="text"
               id="responsibilities"
               value={experience.responsibilities}
@@ -52,6 +55,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="date-start">Date Start </label>
             <input
+              required
               type="date"
               id="date-start"
               value={experience.dateStart}
@@ -66,6 +70,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="date-end">Date End </label>
             <input
+              required
               type="date"
               id="date-end"
               value={experience.dateEnd}

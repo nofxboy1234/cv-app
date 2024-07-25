@@ -10,6 +10,7 @@ export default function EducationEdit({
           <div>
             <label htmlFor="school-name">School Name </label>
             <input
+              required
               type="text"
               id="school-name"
               value={education.schoolName}
@@ -24,6 +25,7 @@ export default function EducationEdit({
           <div>
             <label htmlFor="course">Course </label>
             <input
+              required
               type="text"
               id="course"
               value={education.course}
@@ -38,6 +40,7 @@ export default function EducationEdit({
           <div>
             <label htmlFor="date">Date </label>
             <input
+              required
               type="date"
               id="date"
               value={education.date}

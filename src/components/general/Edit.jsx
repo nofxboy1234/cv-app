@@ -9,6 +9,7 @@ export default function GeneralEdit({
         <div>
           <label htmlFor="first-name">First Name </label>
           <input
+            required
             type="text"
             id="first-name"
             value={general.firstName}
@@ -23,6 +24,7 @@ export default function GeneralEdit({
         <div>
           <label htmlFor="last-name">Last Name </label>
           <input
+            required
             type="text"
             id="last-name"
             value={general.lastName}
@@ -37,6 +39,7 @@ export default function GeneralEdit({
         <div>
           <label htmlFor="email">Email </label>
           <input
+            required
             type="email"
             id="email"
             value={general.email}
@@ -51,6 +54,7 @@ export default function GeneralEdit({
         <div>
           <label htmlFor="phone-number">Phone number </label>
           <input
+            required
             type="tel"
             id="phone-number"
             value={general.phoneNumber}
