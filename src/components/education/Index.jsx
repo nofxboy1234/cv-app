@@ -2,13 +2,17 @@ import { useState } from 'react';
 import Education from './Education';
 import { Fragment } from 'react';
 
+const blankEducation = {
+  schoolName: '',
+  course: '',
+  date: '',
+};
+
 let nextId = 1;
 const initialEducations = [
   {
     id: 0,
-    schoolName: '',
-    course: '',
-    date: '',
+    ...blankEducation,
   },
 ];
 
@@ -16,10 +20,7 @@ export default function EducationIndex() {
   const [educations, setEducations] = useState(initialEducations);
 
   function handleAddEducation() {
-    setEducations([
-      ...educations,
-      { id: nextId++, schoolName: '', course: '', date: '' },
-    ]);
+    setEducations([...educations, { id: nextId++, ...blankEducation }]);
   }
 
   function handleChangeEducation(updatedEducation) {

@@ -1,5 +1,5 @@
 import './App.css';
-import General from './components/General';
+import General from './components/general/General';
 import EducationIndex from './components/education/Index';
 
 function App() {
