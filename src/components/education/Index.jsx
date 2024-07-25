@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import Education from './Education';
 import { Fragment } from 'react';
+import { format } from 'date-fns';
+
+const dateNow = format(new Date(), 'yyyy-MM-dd');
 
 const blankEducation = {
   schoolName: '',
   course: '',
-  date: '',
+  date: dateNow,
 };
 
 let nextId = 1;

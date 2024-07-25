@@ -1,13 +1,16 @@
 import { useState } from 'react';
 import Experience from './Experience';
 import { Fragment } from 'react';
+import { format } from 'date-fns';
+
+const dateNow = format(new Date(), 'yyyy-MM-dd');
 
 const blankExperience = {
   company: '',
   positionTitle: '',
   responsibilities: '',
-  dateStart: '',
-  dateEnd: '',
+  dateStart: dateNow,
+  dateEnd: dateNow,
 };
 
 let nextId = 1;
