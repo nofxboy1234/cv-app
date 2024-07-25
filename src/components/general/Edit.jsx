@@ -66,7 +66,7 @@ export default function GeneralEdit({
             }}
           />
         </div>
-        <div>
+        <div className="submit-container">
           <button type="submit">Submit</button>
         </div>
       </form>

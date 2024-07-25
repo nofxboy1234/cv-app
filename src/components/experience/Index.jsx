@@ -50,18 +50,16 @@ export default function ExperienceIndex() {
     <>
       <h2>Experience</h2>
       <button onClick={handleAddExperience}>Add</button>
-      <ul>
-        {experiences.map((experience) => (
-          <Fragment key={experience.id}>
-            <Experience
-              initialExperienceId={experience.id}
-              experiences={experiences}
-              handleChangeExperience={handleChangeExperience}
-            />
-            {/* <button>Delete</button> */}
-          </Fragment>
-        ))}
-      </ul>
+      {experiences.map((experience) => (
+        <Fragment key={experience.id}>
+          <Experience
+            initialExperienceId={experience.id}
+            experiences={experiences}
+            handleChangeExperience={handleChangeExperience}
+          />
+          {/* <button>Delete</button> */}
+        </Fragment>
+      ))}
     </>
   );
 }

@@ -48,18 +48,16 @@ export default function EducationIndex() {
     <>
       <h2>Education</h2>
       <button onClick={handleAddEducation}>Add</button>
-      <ul>
-        {educations.map((education) => (
-          <Fragment key={education.id}>
-            <Education
-              initialEducationId={education.id}
-              educations={educations}
-              handleChangeEducation={handleChangeEducation}
-            />
-            {/* <button>Delete</button> */}
-          </Fragment>
-        ))}
-      </ul>
+      {educations.map((education) => (
+        <Fragment key={education.id}>
+          <Education
+            initialEducationId={education.id}
+            educations={educations}
+            handleChangeEducation={handleChangeEducation}
+          />
+          {/* <button>Delete</button> */}
+        </Fragment>
+      ))}
     </>
   );
 }

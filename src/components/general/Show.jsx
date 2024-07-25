@@ -6,7 +6,9 @@ export default function GeneralShow({ general, toggleEdit }) {
       <div>{general.email}</div>
       <div>{general.phoneNumber}</div>
       <form onSubmit={toggleEdit}>
-        <button type="submit">Edit</button>
+        <div className="submit-container">
+          <button type="submit">Edit</button>
+        </div>
       </form>
     </>
   );
