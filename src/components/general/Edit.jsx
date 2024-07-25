@@ -37,7 +37,7 @@ export default function GeneralEdit({
         <div>
           <label htmlFor="email">Email </label>
           <input
-            type="text"
+            type="email"
             id="email"
             value={general.email}
             onChange={(e) => {
@@ -51,7 +51,7 @@ export default function GeneralEdit({
         <div>
           <label htmlFor="phone-number">Phone number </label>
           <input
-            type="text"
+            type="tel"
             id="phone-number"
             value={general.phoneNumber}
             onChange={(e) => {

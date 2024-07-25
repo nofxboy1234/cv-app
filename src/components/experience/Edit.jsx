@@ -52,7 +52,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="date-start">Date Start </label>
             <input
-              type="text"
+              type="date"
               id="date-start"
               value={experience.dateStart}
               onChange={(e) => {
@@ -66,7 +66,7 @@ export default function ExperienceEdit({
           <div>
             <label htmlFor="date-end">Date End </label>
             <input
-              type="text"
+              type="date"
               id="date-end"
               value={experience.dateEnd}
               onChange={(e) => {

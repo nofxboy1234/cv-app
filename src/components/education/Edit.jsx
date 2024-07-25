@@ -38,7 +38,7 @@ export default function EducationEdit({
           <div>
             <label htmlFor="date">Date </label>
             <input
-              type="text"
+              type="date"
               id="date"
               value={education.date}
               onChange={(e) => {
