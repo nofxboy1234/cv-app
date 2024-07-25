@@ -34,11 +34,11 @@ export default function EducationIndex() {
     );
   }
 
-  function handleDeleteEducation(educationId) {
-    setEducations(
-      educations.filter((education) => education.id !== educationId)
-    );
-  }
+  // function handleDeleteEducation(educationId) {
+  //   setEducations(
+  //     educations.filter((education) => education.id !== educationId)
+  //   );
+  // }
 
   return (
     <>
@@ -48,10 +48,11 @@ export default function EducationIndex() {
         {educations.map((education) => (
           <Fragment key={education.id}>
             <Education
-              {...education}
+              initialEducationId={education.id}
+              educations={educations}
               handleChangeEducation={handleChangeEducation}
             />
-            <button>Delete</button>
+            {/* <button>Delete</button> */}
           </Fragment>
         ))}
       </ul>

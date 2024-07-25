@@ -1,23 +1,24 @@
 export default function EducationEdit({
-  schoolName,
-  course,
-  date,
-  setSchoolName,
-  setCourse,
-  setDate,
-  handleSubmit,
+  education,
+  handleChangeEducation,
+  toggleEdit,
 }) {
   return (
     <>
       <li>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={toggleEdit}>
           <div>
             <label htmlFor="school-name">School Name </label>
             <input
               type="text"
               id="school-name"
-              value={schoolName}
-              onChange={(e) => setSchoolName(e.target.value)}
+              value={education.schoolName}
+              onChange={(e) => {
+                handleChangeEducation({
+                  ...education,
+                  schoolName: e.target.value,
+                });
+              }}
             />
           </div>
           <div>
@@ -25,8 +26,13 @@ export default function EducationEdit({
             <input
               type="text"
               id="course"
-              value={course}
-              onChange={(e) => setCourse(e.target.value)}
+              value={education.course}
+              onChange={(e) => {
+                handleChangeEducation({
+                  ...education,
+                  course: e.target.value,
+                });
+              }}
             />
           </div>
           <div>
@@ -34,8 +40,13 @@ export default function EducationEdit({
             <input
               type="text"
               id="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
+              value={education.date}
+              onChange={(e) => {
+                handleChangeEducation({
+                  ...education,
+                  date: e.target.value,
+                });
+              }}
             />
           </div>
           <div>
